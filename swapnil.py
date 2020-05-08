@@ -3,7 +3,7 @@ import joblib
 import time
 import pandas as pd
 st.markdown("<h1 style='text-align: center;'>Hello World</h1>", unsafe_allow_html=True)
-gv = open("dean.pkl","rb")
+gv = open("now.pkl","rb")
 model = joblib.load(gv)
 a= st.selectbox("Select  gender",['Select','Male','Female'])
 b=st.number_input("Enter Age",min_value=1,value=1)
